@@ -1,0 +1,659 @@
+
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');/*Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');/*Poopins*/
+
+:root {
+    --font-titulo: 'Poppins', sans-serif;;
+    --font-parag:  'Lato', sans-serif;;
+    --color-primary: black;
+    --color-secundary:#fff;
+    --color-terciary: #f47521;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-primary);
+    /*overflow-x: hidden;*/
+}
+
+
+::selection {
+    background: #23252b;
+    color: #f47521;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+ width: 100%;
+ display: flex;
+ align-items: center;
+}
+
+.header .container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header .container img{
+    width: 140px;
+}
+
+#main .container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+#main .section_one .box-flex{
+    display: flex;
+    align-items: center;
+}
+
+#main .section_one .box-flex .box-left{
+    width: 55%;
+    height: auto;
+}
+
+#main .section_one .box-flex .box-left h1{
+    font-size: 34px;
+    font-family: var(--font-titulo);
+    color: var(--color-secundary);
+}
+
+#main .section_one .box-flex .box-left p{
+    font-size: 18px;
+    font-family: var(--font-parag);
+    color: #dadada;
+    line-height: 26px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#main .section_one .box-flex .box-left button{
+    background-color: var(--color-terciary);
+    padding: 15px 20px;
+    border: none;
+    color: #23252b;
+    font-family: var(--font-parag);
+    text-transform: uppercase;
+    margin-top:20px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+#main .section_one .box-flex .box-left button:hover{
+    background-color: #f79757;
+}
+
+#main .section_one .box-flex .box-right{
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+}
+
+#main .section_one .box-flex .box-right img{
+    width: 450px;
+}
+
+
+/*SEGUNDA SESSÃO DO SITE*/
+
+
+#main .section_two .box-flex{
+    display: flex;
+    align-items: center;
+}
+#main .section_two .box-flex .box-left{
+    width: 60%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#main .section_two .box-flex .box-left .img-circle{
+    background-image: url(../imagens/background.webp);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#main .section_two .box-flex .box-right{
+    width: 40%;
+    height: auto;
+    justify-content: end;
+}
+
+#main .section_two .box-flex .box-right h2{
+    width: 100%;
+    height: auto;
+    font-family: var(--font-titulo);
+    color: var(--color-secundary);
+    font-size: 34px;
+}
+
+#main .section_two .box-flex .box-right p{
+    width: 400px;
+    height: auto;
+    font-family: var(--font-parag);
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 10px;
+    color: #c9c9c9;
+    font-weight: 500;
+}
+
+#main .section_two .box-flex .box-right a{
+    font-family: var(--font-parag);
+    margin-top: 10px;
+    color: #a1a1a1;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    top: 160px;
+    right: -360px;
+    transition: 0.2s;
+}
+
+#main .section_two .box-flex .box-right a:hover{
+    color: white;
+}
+
+#main .section_two .link_a{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    margin: 0 auto;
+}
+
+#main .section_two .link_a a{
+    font-family: var(--font-parag);
+    margin-top: -35px;
+    color: #a1a1a1;
+    text-transform: uppercase;
+    transition: 0.2s;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#main .section_two .link_a a i{
+    font-size: 18px;
+    color: #a1a1a1;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+#main .section_two .link_a a:hover i{
+    color: white;
+}
+
+#main .section_two .link_a  a:hover{
+    color: white;
+}
+
+#main .section_two .line-degrade{
+    width: 100%;
+    height: 0.25rem;
+    background-image: linear-gradient(to left,#fab818,#ef4323);
+    margin-top: 0;
+}
+
+
+/*Slide de imagem da crunchyroll*/
+
+.flex_slide{
+    display: flex;
+    align-items: center;
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide .box-img{
+    color: white;
+    font-family: var(--font-parag);
+}
+
+.slide .box-img h4{
+    color: white;
+    font-family: var(--font-parag);
+    font-size: 14px;
+    margin: 10px 10px;
+}
+
+.slide .box-img p{
+    color: #8d8d8d;
+    font-family: var(--font-parag);
+    font-size: 14px;
+    margin: 10px 10px;
+}
+.slide .box-img p span{
+    color: #2abdbb;
+}
+
+.slide img {
+    width: 163.8px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.slide img:hover {
+    background-color: rgba(255, 255, 255, 0.616);
+}
+
+#prevButton {
+    cursor: pointer;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    transition: 0.2s;
+    height: 40px;
+}
+
+#prevButton:hover{
+    background-color: rgba(255, 255, 255, 0.616);
+}
+
+
+#nextButton {
+    cursor: pointer;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    transition: 0.2s;
+    height: 40px;
+    position: relative;
+}
+
+
+#nextButton:hover{
+    background-color: rgba(255, 255, 255, 0.616);
+}
+
+/*Sessao 3 */
+
+#main .section-tree {
+    width: 100%;
+    height: auto;
+}
+
+#main .section-tree .container{
+    max-width: 1350px;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+}
+
+#main .section-tree .container .background-circle{
+    background-image: url(../imagens/background.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll{
+    width: calc(100% + 225px);
+    height: auto;
+    background-image: linear-gradient(to right,#fab818,#ef4323);
+    padding: 2.5px;
+    position: relative;
+    left: -100px;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia h2{
+    font-family: var(--font-titulo);
+    width: 480px;
+    font-size: 25px;
+}
+
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .line-degrade{
+    width: 100%;
+    height: 0.25rem;
+    background-image: linear-gradient(to left,#fab818,#ef4323);
+    margin-bottom: 10px;
+}
+
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia p{
+    font-family: var(--font-parag);
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 10px;
+    color: #a1a1a1;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .not1 {
+    width: 270px;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .not1 h5{
+    color: var(--color-secundary);
+    font-family: var(--font-parag);
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .not1 img{
+    width: 100%;
+    height:130px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .not1 p{
+    font-size: 17px;
+    font-weight: 200;
+    color: var(--color-secundary);
+    font-family: var(--font-parag);
+    margin: -2.5px;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .not1 span{
+    font-family: var(--font-parag);
+    font-size: 12px;
+    color:#a1a1a1;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos{
+    width: 100%;
+    height: auto;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos .flex-novos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    font-family: var(--font-parag);
+    font-size: 18px;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos .flex-novos h5{
+    font-size: 18px;
+    color: var(--color-secundary);
+    margin-left: 20px;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos .flex-novos a{
+    font-family: var(--font-parag);
+    color: #a1a1a1;
+    text-transform: uppercase;
+    transition: 0.2s;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos .flex-novos i{
+    font-size: 18px;
+    color: #a1a1a1;
+    transition: 0.5s;
+    margin-left: 5px;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos .flex-novos a:hover i{
+    color: white;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos .flex-novos  a:hover{
+    color: white;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos .box-novos{
+    display: flex;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos .box-novos img{
+    width: 160px;
+    height: 100px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos .descr-novos{
+    margin-top: 10px;
+    font-family: var(--font-parag);
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos .descr-novos h6{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#main .section-tree .container .background-circle .etreia-crunchyroll .box-estreia .animes-novos .descr-novos span{
+    font-family: var(--font-parag);
+    font-size: 12px;
+    color:#a1a1a1;
+}
+
+
+#main .container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+#main .section_for .container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#main .section_for .container .flex-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#main .section_for .container .flex-titulo h2{
+    color: white;
+    font-family: var(--font-titulo);
+    font-size: 34px;
+}
+
+#main .section_for .flex-titulo a{
+    font-family: var(--font-parag);
+    color: #a1a1a1;
+    text-transform: uppercase;
+    transition: 0.2s;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#main .section_for .flex-titulo i{
+    font-size: 18px;
+    color: #a1a1a1;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+#main .section_for .flex-titulo a:hover i{
+    color: white;
+}
+
+#main .section_for .flex-titulo  a:hover{
+    color: white;
+}
+
+#main .section_for .flex-manga{
+    display: flex;
+}
+
+#main .section_for .flex-manga .mangas{
+    display: flex;
+}
+
+#main .section_for .flex-manga .mangas .box-manga{
+    margin: 0 20px;
+}
+
+#main .section_for .flex-manga .mangas .box-manga img{
+    width: 250px;
+    height: 400px;
+}
+
+#main .section_for .flex-manga .mangas .box-manga h6{
+    color: var(--color-secundary);
+    font-family: var(--font-parag);
+    font-size: 15px;
+}
+
+
+
+
+/*Rodape*/
+
+.rodape{
+    width: 100%;
+    height:auto ;
+    text-align: center;
+    padding: 100px 40px 40px 40px;
+    margin-top: 100px;
+}
+
+.rodape h2{
+    font-family: var(--font-titulo);
+    font-size: 34px;
+    color: var(--color-secundary);
+}
+
+.rodape p{
+    color: var(--color-secundary);
+    font-size: 18px;
+    font-family: var(--font-parag);
+    margin: 20px 0;
+}
+
+.rodape p span{
+    color: #f47521;
+    font-size: 18px;
+}
+
+.rodape span{
+    color: var(--color-secundary);
+    font-family: var(--font-parag);
+    margin-top: 100px;
+    font-size: 14px;
+}
+
+.rodape .flex-link{
+    display: flex;
+    justify-content: center;
+}
+
+.rodape .flex-link a{
+    color: #a1a1a1;
+    margin: 100px 20px 20px 20px;
+    font-family: var(--font-parag);
+    font-size: 14px;
+}
+
+.rodape .flex-link a:hover{
+    color: white;
+}
+
+.rodape .line{
+    height: 1px;
+    background-color: #7a7a7a;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+.rodape .flex-parceria{
+    width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape .flex-parceria h2{
+    font-size: 16px;
+    font-family: var(--font-parag);
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #a0a0a0;
+}
+
+.rodape .flex-parceria h2 span{
+    font-size: 14px;
+    font-family: var(--font-parag);
+    text-transform: lowercase;
+    color: #a0a0a0;
+}
+
+
+
+.rodape .flex-parceria .box-lingua span{
+    align-items: center;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    font-family: var(--font-parag);
+    padding: 15px;
+    transition: 0.2s;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+
+.rodape .flex-parceria .box-lingua:hover span{
+    background-color: #a0a0a075;
+    color: white;
+}
+
+.rodape .flex-parceria .box-lingua i{
+margin-right: 10px;
+align-items: center;
+}

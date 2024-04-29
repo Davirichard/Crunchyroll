@@ -1,0 +1,181 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');/*Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');/*Poopins*/
+
+:root {
+    --font-titulo: 'Poppins', sans-serif;;
+    --font-parag:  'Lato', sans-serif;;
+    --color-primary: black;
+    --color-secundary:#fff;
+    --color-terciary: #f47521;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #141519;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    background-color: #23252b;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.header img{
+    width: 150px;
+}
+
+.main{
+    background-image: url(../imagens/tanjir2.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.main .fundo{
+    width: 100%;
+    height:auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.main h1{
+    text-align: center;
+    color: white;
+    font-family: var(--font-titulo);
+    font-weight: 300;
+    margin-bottom: 15px;
+    padding-top: 50px;
+}
+
+.main p{
+    color: #a0a0a0;
+    text-align: center;
+    font-family: var(--font-parag);
+    font-size: 18px;
+}
+
+.main .box-conta{
+    width: 450px;
+    height: auto;
+    background-color: #141519;
+    margin: 20px auto 30px auto;
+    padding: 20px 40px 30px 40px ;
+    text-align: center;
+}
+
+.main .box-conta #foto{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-image: url(../imagens/jujutsu_kaisen__0s00x2heg.webp);
+    background-position: center;
+    background-size: cover;
+    margin: 20px auto;
+}
+
+.main .box-conta button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 2px solid #dadada;
+    color: #dadada;
+    background-color:transparent;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.main .box-conta button:hover{
+    background-color: rgba(255, 255, 255, 0.863);
+    color: black;
+}
+
+.main .box-conta .adcionar_nome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .box-conta .adcionar_nome input{
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.main .box-conta .line{
+    width: 100%;
+    height: 2px;
+    background-color: #59595b;
+    margin-bottom: 10px;
+}
+
+.main .box-conta .adcionar_nome a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-parag);
+    margin-left: 10px;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+.main .box-conta .adcionar_nome a:hover{
+    color: var(--color-terciary);
+}
+
+
+.main .box-conta p{
+    color:#a0a0a0;
+    font-size: 0.78rem;
+    font-family: var(--font-parag);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.main .box-conta .flex-span{
+    display: flex;
+    margin-top: 30px;
+}
+
+.main .box-conta .flex-span i{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.main .box-conta .flex-span p{
+    width: 95%;
+    color:var(--color-secundary);
+    font-size: 0.75rem;
+    font-family: var(--font-parag);
+    padding-left: 10px;
+}
+
+.main .box-button{
+    display: flex;
+    justify-content: center;
+}
+
+
+.main .box-button button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 2px solid #a0a0a0;
+    color: #a0a0a0;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
